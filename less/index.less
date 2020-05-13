@@ -58,11 +58,66 @@ html, body {
 }
 
 //Variables start here//
-@background-color:#f5f5dc;
-@right-font:Verdana;
-@right-size:1rem;
+@background-color: #f5f5dc;
+@right-font: Verdana;
+@right-size: 1rem;
 //Variables end here//
 
-.opener{
-	font:@right-font;
+.margined {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.fontsettings {
+	font-size: @right-size;
+	font-family: @right-font;
+}
+
+body{
+	background:@background-color;
+} 
+
+.opener {
+	.fontsettings();
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	  
+	.name {
+		font-size: 3rem;
+	}
+	.logo {
+		img {
+			border: solid;
+		}
+	}
+
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		.margined();
+		.links {
+			.fontsettings();
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+	}
+
+}
+
+	
+
+.top-content {
+	.intro {
+		display: flex;
+		flex-direction: column;
+		h2 {
+			text-align: center;
+		}
+		p{
+			.margined();
+		}
+	}
 }

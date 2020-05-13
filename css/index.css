@@ -134,6 +134,47 @@ html,
 body {
   height: 100%;
 }
+.margined {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+body {
+  background: #f5f5dc;
+}
 .opener {
-  font: Verdana;
+  font-size: 1rem;
+  font-family: Verdana;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.opener .name {
+  font-size: 3rem;
+}
+.opener .logo img {
+  border: solid;
+}
+.opener nav {
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.opener nav .links {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top-content .intro {
+  display: flex;
+  flex-direction: column;
+}
+.top-content .intro h2 {
+  text-align: center;
+}
+.top-content .intro p {
+  margin-left: 10%;
+  margin-right: 10%;
 }
